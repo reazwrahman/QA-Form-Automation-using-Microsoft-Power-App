@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+
+<!############ START: INSPECTION PLAN ############ >   
+<head>
+<style>
+table, th, td 
+{
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 25px;
+  text-align: left;
+}
+table#t02 {
+  width: 100%;    
+  background-color: #f1f1c1;
+}
+</style>
+</head>
+<body>
+
+<h2 align="center"> Inspection Plan</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Criteria</th>
+    <th>Yes/ No / NA</th>   
+    <th>Comment (List NCR # For Noncomformances)</th>
+  </tr>
+  
+  <tr>
+    <td>Q1: Are only approved materials and shop drawings being used? </td>
+    <td> @{items('Apply_to_each')['a1']}</td> 
+    <td> @{items('Apply_to_each')['c1']}</td>
+    
+  </tr>
+  
+  <tr>
+    <td>Q2: Is all work being carried out under proper authorization and approved procedures? Hold Point </td>
+    <td> @{items('Apply_to_each')['a2']}	</td> 
+    <td> @{items('Apply_to_each')['c2']}	</td>
+  </tr> 
+  
+  <tr>
+    <td>Q3: Are approved Conduits being installed as required? </td>
+    <td> @{items('Apply_to_each')['a3']}	</td> 
+    <td> @{items('Apply_to_each')['c3']} 	</td>
+  </tr>
+  
+  <tr>
+    <td>Q4: Are approved fitting, couplings, connectors, clamps being used as required? </td>
+    <td> @{items('Apply_to_each')['a4']}	</td> 
+    <td> @{items('Apply_to_each')['c4']}	</td>
+  </tr>
+  
+  <tr>
+    <td>Q5: Are approved Cables being installed as required? </td>
+    <td> @{items('Apply_to_each')['a5']}	</td> 
+    <td> @{items('Apply_to_each')['c5']}	</td>
+  </tr> 
+  
+  
+  <tr>
+    <td>Q6: Is all equipment properly installed as per spec? HOLD POINT </td>
+    <td> @{items('Apply_to_each')['a6']}	</td> 
+    <td> @{items('Apply_to_each')['c6']}	</td>
+  </tr> 
+  
+  
+  <tr>
+    <td>Q7: Has all systems been installed as indicated and in accordance with manufacturer’s instructions? </td>
+    <td> @{items('Apply_to_each')['a7']}	</td> 
+    <td> @{items('Apply_to_each')['c7']}	</td>
+  </tr>
+
+  <tr>
+    <td>Q8: Has a visual check for workmanship, installation, alignment, and height been conducted? HOLD POINT </td>
+    <td> @{items('Apply_to_each')['a8']}	</td> 
+    <td> @{items('Apply_to_each')['c8']}	</td>
+  </tr>  
+  
+  <tr>
+    <td>Q9: Has all work been coordinated for interference?</td>
+    <td> @{items('Apply_to_each')['a9']}	</td> 
+    <td> @{items('Apply_to_each')['c9']}	</td>
+  </tr>   
+  
+  <tr>
+    <td>Q10: Have all Hold Points been conducted?</td>
+    <td> @{items('Apply_to_each')['a10']} 	</td> 
+    <td>  @{items('Apply_to_each')['c10']}	</td>
+  </tr>  
+  
+  
+  <tr>
+    <td>Q11: Additional Inspection Points? </td>
+    <td>@{items('Apply_to_each')['a11']}	</td> 
+    <td> @{items('Apply_to_each')['c11']}	</td>
+  </tr> 
+  
+  
+  <tr>
+    <td>Q12: Buy American Compliance? </td>
+    <td> @{items('Apply_to_each')['a12']}	</td> 
+    <td> @{items('Apply_to_each')['c12']}	</td> 
+  </tr> 
+
+
+  <tr>
+    <td>  </td>
+    <td>	</td> 
+    <td>	</td>
+  </tr> 
+
+</table>
+<br> 
+
+<! ############ END: INSPECTION PLAN ############ >  
+
+
+<!############ START: Additional Comments section ############ > 
+
+
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+table#t03 {
+  width: 100%;    
+  background-color: #f1f1c1;
+} 
+
+</style>
+</head> 
+<h3 align="left"> Additional Comments </h3>
+
+<table style="width:100%">
+  <tr>
+    <td>"placeholder for powerapp entry" </td> 
+    
+  </tr>  
+</table>
+<br>
+
+<!############ END: Additional Comments section ############ >   
+  
+
+<!############ START: Sign Section ############ > 
+
+<style>
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse; 
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+table#t07 {
+  width: 100%;    
+  background-color: #f1f1c1;  
+} 
+tr.noBorder td {
+  border: 0;
+} 
+
+</style>
+</head>  
+
+<style> 
+
+</style> 
+
+<h3 align="left"> SIGN </h3>
+
+<table  style="width:100%">
+  <tr class="noBorder"> 
+    <td>QM/QS: </td>   
+    <td>Date:  </td> 
+    <td>Shift: </td>
+         
+  </tr>  
+  
+<table  style="width:100%">
+  <tr class="noBorder"> 
+    <td>CCM: </td>   
+    <td>Date:  </td> 
+    <td>Shift: </td>
+         
+  </tr>   
+</table>
+<br> 
+
+<!############ START: Sign Section ############ >   
+
+
+
+
+
+</body>
+</html>
+      
