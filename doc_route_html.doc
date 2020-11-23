@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+
+<!############ START: Top Image Section ############ > 
+
+<table border="1" bordercolor="black" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table style="width:80%" align="left">
+  <tr class="noBorder">  
+  
+    <td> <img src="data:image/png;base64,@{body('Get_file_content_using_path')}"alt="" align="left" border=3 height=150 width=200></img></td> </td>  
+    
+    <td> </td> 
+    <td> </td> 
+    <td> </td> 
+    <td> </td> 
+    <td> </td> 
+    <td> </td>
+    <td><span style="font-weight:bold" align="right"> CHECKLIST <br>
+    SANDY REPAIR AND CORE CAPACITY IMPROVEMENT <br>
+    PROJECT CANARSIE TUNNEL REHABILITATION  </span></br> 
+    </td> 
+    
+         
+  </tr>   </table>
+ </td></tr>
+</table>   
+<br>
+
+
+<!############ END: Top Image Section ############ > 
+
+
+
+
+<!############ START: PROJECT INFORMATION SECTION ############ > 
+
+<h3 align="center">
+    Project Information
+</h3>
+
+<table border="2" cellspacing="0" cellpadding="1" width="100%">
+    <tbody>
+        
+            <td width="100%"" valign="top">
+                <p>
+                    Job:@{items('Apply_to_each')['job']} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Job/Contract No:@{items('Apply_to_each')['job_number']} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Weather:@{items('Apply_to_each')['weather']}
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%"" valign="top">
+                <p>
+                    Contract No:@{items('Apply_to_each')['contract_no']} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Description:@{items('Apply_to_each')['description']}
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%"" valign="top">
+                <p>
+                    Work Location: @{items('Apply_to_each')['work_location']} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Work Performed by:@{items('Apply_to_each')['work_performed_by']}
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%"" valign="top">
+                <p>
+                    Items Installed/Inspected:@{items('Apply_to_each')['items_installed']}
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%"" valign="top">
+                <p>
+                    Approved by NYCT Shop Drawing:@{items('Apply_to_each')['approved_by']}
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%"" valign="top">
+                <p>
+                    Spec Section:@{items('Apply_to_each')['spec_section']} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 	 Completed by:@{items('Apply_to_each')['completed_by']}
+
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table> 
+
+
+<!############ END: PROJECT INFORMATION SECTION ############ >  
+
+
+
+<!############ START: INSPECTION PLAN ############ > 
+<h3 align="center">
+    Inspection Plan
+</h3>
+<div align="center">
+    <table border="1" cellspacing="0" cellpadding="0" width="100%">
+        <tbody>
+            <tr>
+                <td>
+                    <p>
+                        <strong>Criteria</strong>
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <strong>Yes/ No / NA</strong>
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <strong>
+                            Comment (List NCR # For Nonconformances)
+                        </strong>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Q1: Are only approved materials and shop drawings being
+                        used?
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        @{items('Apply_to_each')['a1']}
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        @{items('Apply_to_each')['c1']}
+                    </p>
+                
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Q2: Is all work being carried out under proper
+                        authorization and approved procedures? HOLD POINT
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        @{items('Apply_to_each')['a2']}
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        @{items('Apply_to_each')['c2']}
+                    </p>
+                
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Q3: Are approved Conduits being installed as required?
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        @{items('Apply_to_each')['a3']}
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        @{items('Apply_to_each')['c3']}
+                    </p>
+                
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Q4: Are approved fitting, couplings, connectors, clamps
+                        being used as required?
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        @{items('Apply_to_each')['a4']}
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        @{items('Apply_to_each')['c4']}
+                    </p>
+                
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Q5: Are approved Cables being installed as required?
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        @{items('Apply_to_each')['a5']}
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        @{items('Apply_to_each')['c5']}
+                    </p>
+                
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Q6: Is all equipment properly installed as per spec?
+                        HOLD POINT
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        @{items('Apply_to_each')['a6']}
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        @{items('Apply_to_each')['c6']}
+                    </p>
+                
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Q7: Has all systems been installed as indicated and in
+                        accordance with manufacturer’s instructions?
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        @{items('Apply_to_each')['a7']}
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        @{items('Apply_to_each')['c7']}
+                    </p>
+                
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Q8: Has a visual check for workmanship, installation,
+                        alignment, and height been conducted? HOLD POINT
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        @{items('Apply_to_each')['a8']}
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        @{items('Apply_to_each')['c8']}
+                    </p>
+                
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Q9: Has all work been coordinated for interference?
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        @{items('Apply_to_each')['a9']}
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        @{items('Apply_to_each')['c9']}
+                    </p>
+                
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Q10: Have all Hold Points been conducted?
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        @{items('Apply_to_each')['a10']}
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        @{items('Apply_to_each')['c10']}
+                    </p>
+                
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Q11: Additional Inspection Points?
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        @{items('Apply_to_each')['a11']}
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        @{items('Apply_to_each')['c11']}
+                    </p>
+                
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Q12: Buy American Compliance?
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        @{items('Apply_to_each')['a12']}
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        @{items('Apply_to_each')['c12']}
+                    </p>
+                
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<! ########### START: ADDITIONAL COMMENT SECTION ############## > 
+
+<h3 align="center">
+    Additional Comments
+</h3>
+<table border="1" cellspacing="0" cellpadding="10" width="645">
+    <tbody>
+        <tr>
+            <td width="645" valign="top"> 
+            <p>
+                        @{items('Apply_to_each')['additional_comment']}
+                    </p>
+            </td>
+        </tr>
+    </tbody>
+</table> 
+
+
+<! ########### END: ADDITIONAL COMMENT SECTION ############## > 
+
+
+<! ########### START: SIGN OFF SECTION ############## >
+
+<h3 align="center">
+    SIGN
+</h3>
+<table border="1" cellspacing="0" cellpadding="3">
+    <tbody>
+        <tr>
+            <td width="622" valign="top">
+                <p>
+                    QM/QS: @{items('Apply_to_each')['qm_sign']} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Date:@{items('Apply_to_each')['qm_date']} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Shift: @{items('Apply_to_each')['qm_shift']}
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="622" valign="top">
+                <p>
+                    CCM Sign Off: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Date: @{items('Apply_to_each')['ccm_date']} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Shift:@{items('Apply_to_each')['ccm_shift']}
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table> 
+
+<! ########### END: SIGN OFF SECTION ############## >  
+
+<! ########### START: Upload image section ############## >
+
+<h3 align="center">
+    Uploaded Image for Question 1
+</h3>    
+    <td> <img src=alt="@{items('Apply_to_each')['u1']}" align="center" border=3 height=150 width=200></img></td> </td>  
+
+<h3 align="center">
+    Uploaded Image for Question 2
+</h3>    
+    <td> <img src=alt="@{items('Apply_to_each')['u2']}" align="center" border=3 height=150 width=200></img></td> </td>  
+
+
+<! ########### END: Upload image section ############## >
+
+
+
