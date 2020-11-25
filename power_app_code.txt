@@ -1,0 +1,14 @@
+["EGI","207th St","HC64","IESS","SI Ferry","WTC-1805","MRN120 ADA Upgrade","ENY Bus Depot","11 Elevators","Canarsie","MNR Sandy",]
+
+If(job.Selected.Value="EGI","A025",job.Selected.Value="207th St","A026",job.Selected.Value="HC64","A028",job.Selected.Value="IESS","A030",job.Selected.Value="SI Ferry","A031",job.Selected.Value="WTC-1805","A032",job.Selected.Value="MRN120 ADA Upgrade","A033",job.Selected.Value="ENY Bus Depot","A034",job.Selected.Value="11 Elevators","A035",job.Selected.Value="Canarsie","NEWJOB1",job.Selected.Value="MNR Sandy","NEWJOB2")
+
+If(job.Selected.Value="EGI","100",job.Selected.Value="HC64","100",job.Selected.Value="IESS","100",job.Selected.Value="SI Ferry","100",job.Selected.Value="WTC-1805","100",job.Selected.Value="MRN120 ADA Upgrade","100",job.Selected.Value="ENY Bus Depot","300",job.Selected.Value="11 Elevators","400",job.Selected.Value="Canarsie","200",job.Selected.Value="MNR Sandy","200",job.Selected.Value="MNR Sandy","200")
+
+If(job_2.Selected.Value="EGI","A025",job_2.Selected.Value="207th St","A026",job_2.Selected.Value="HC64","A028",job_2.Selected.Value="IESS","A030",job_2.Selected.Value="SI Ferry","A031",job_2.Selected.Value="WTC-1805","A032",job_2.Selected.Value="MRN120 ADA Upgrade","A033",job_2.Selected.Value="ENY Bus Depot","A034",job_2.Selected.Value="11 Elevators","A035",job_2.Selected.Value="Canarsie","NEWJOB1",job_2.Selected.Value="MNR Sandy","NEWJOB2")
+
+If(job_2.Selected.Value="EGI","100",job_2.Selected.Value="HC64","100",job_2.Selected.Value="IESS","100",job_2.Selected.Value="SI Ferry","100",job_2.Selected.Value="WTC-1805","100",job_2.Selected.Value="MRN120 ADA Upgrade","100",job_2.Selected.Value="ENY Bus Depot","300",job_2.Selected.Value="11 Elevators","400",job_2.Selected.Value="Canarsie","200",job_2.Selected.Value="MNR Sandy","200",job_2.Selected.Value="MNR Sandy","200")
+
+If(job_1.Selected.Value="EGI","A025",job_1.Selected.Value="207th St","A026",job_1.Selected.Value="HC64","A028",job_1.Selected.Value="IESS","A030",job_1.Selected.Value="SI Ferry","A031",job_1.Selected.Value="WTC-1805","A032",job_1.Selected.Value="MRN120 ADA Upgrade","A033",job_1.Selected.Value="ENY Bus Depot","A034",job_1.Selected.Value="11 Elevators","A035",job_1.Selected.Value="Canarsie","NEWJOB1",job_1.Selected.Value="MNR Sandy","NEWJOB2")
+
+If(job_1.Selected.Value="EGI","100",job_1.Selected.Value="HC64","100",job_1.Selected.Value="IESS","100",job_1.Selected.Value="SI Ferry","100",job_1.Selected.Value="WTC-1805","100",job_1.Selected.Value="MRN120 ADA Upgrade","100",job_1.Selected.Value="ENY Bus Depot","300",job_1.Selected.Value="11 Elevators","400",job_1.Selected.Value="Canarsie","200",job_1.Selected.Value="MNR Sandy","200",job_1.Selected.Value="MNR Sandy","200")
+

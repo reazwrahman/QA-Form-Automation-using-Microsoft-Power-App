@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<!############ START: Top Image Section ############ > 
+
+<style>
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse; 
+}
+th, td {
+  padding: 10 ;
+  text-align: right;
+}
+table#t00 {
+  width: 90%;    
+  background-color: #f1f1c1;  
+} 
+tr.noBorder td {
+  border: 0;
+} 
+
+</style>
+</head>  
+
+<style> 
+
+</style> 
+
+
+<table  style="width:90%" align="center">
+  <tr class="noBorder">  
+  
+    <td> <img src="data:image/png;base64,@{body('Get_file_content_using_path')}"alt="" align="left" border=3 height=150 width=200></img></td> </td>  
+    
+    <td> </td> 
+    <td> </td> 
+    <td> </td> 
+    <td> </td> 
+    <td> </td> 
+    <td> </td>
+    <td><span style="font-weight:bold" align="right"> CHECKLIST <br>
+    SANDY REPAIR AND CORE CAPACITY IMPROVEMENT 
+    PROJECT CANARSIE TUNNEL REHABILITATION  </span></br> 
+    </td>          
+  </tr>  
+  
+</table> 
+<br>
+<!############ END: Top Image Section ############ >   
+
+
+
+
+<!############ START: Project Information Section ############ > 
+
+<style>
+table, th, td {
+  border: 3px solid black;
+  border-collapse: collapse; 
+}
+th, td {
+  padding: 10;
+  text-align: left;
+}
+table#t01 {
+  width: 90%;    
+  background-color: #f1f1c1;  
+} 
+tr.noBorder td {
+  border: 0;
+} 
+
+</style>
+</head>  
+
+<style> 
+
+</style> 
+
+<h2 align="center"> PROJECT INFORMATION </h2>
+
+<table  style="width:90%" align="center">
+  <tr class="noBorder"> 
+    <td>Job: @{items('Apply_to_each')['job']}</td>   
+    <td>Job/Contract No: @{items('Apply_to_each')['job_number']} </td>  
+    <td>Weather: @{items('Apply_to_each')['weather']} </td>
+
+<table  style="width:90%" align="center">
+  <tr class="noBorder"> 
+    <td>Contract No: @{items('Apply_to_each')['contract_no']}</td>   
+    <td>Description: @{items('Apply_to_each')['description']} </td> 
+    
+         
+  </tr>  
+  
+<table style="width:90%" align="center">
+  <tr class="noBorder"> 
+    <td>Work Location: @{items('Apply_to_each')['work_location']}</td>   
+    <td></td> 
+    <td>Work performed by: @{items('Apply_to_each')['work_performed_by']}</td> 
+  </tr> 
+
+<table  style="width:90%" align="center">
+  <tr class="noBorder"> 
+    <td>Item Installed/Inspected: @{items('Apply_to_each')['items_installed']}</td>    
+  </tr>   
+  <tr class="noBorder"> 
+    <td> </td>    
+  </tr> 
+  
+<table  style="width:90%" align="center">
+  <tr class="noBorder"> 
+    <td>Approved by NYCT Shop Drawing: @{items('Apply_to_each')['approved_by']}</td>            
+  </tr>  
+
+<table  style="width:90%" align="center">
+  <tr class="noBorder"> 
+    <td>Spec Section: @{items('Apply_to_each')['spec_section']}</td>   
+    <td>Completed By:  @{items('Apply_to_each')['completed_by']}</td> 
+   
+  </tr>  
+  
+</table> 
+<br>
+<!############ END: Project Information Section ############ >   
+
+
+<!############ START: INSPECTION PLAN ############ >   
+<head>
+<style>
+table, th, td 
+{
+  border: 3px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+table#t02 {
+  width: 90%;    
+  background-color: #f1f1c1;
+}
+</style>
+</head>
+<body>
+
+<h2 align="center"> Inspection Plan</h2>
+
+<table style="width:90%" align="center">
+  <tr>
+    <th>Criteria</th>
+    <th>Yes/ No / NA</th>   
+    <th>Comment (List NCR # For Noncomformances)</th>
+  </tr>
+  
+  <tr>
+    <td>Q1: Are only approved materials and shop drawings being used? </td>
+    <td> @{items('Apply_to_each')['a1']}</td> 
+    <td> @{items('Apply_to_each')['c1']}</td>
+    
+  </tr>
+  
+  <tr>
+    <td>Q2: Is all work being carried out under proper authorization and approved procedures? HOLD POINT </td>
+    <td> @{items('Apply_to_each')['a2']}	</td> 
+    <td> @{items('Apply_to_each')['c2']}	</td>
+  </tr> 
+  
+  <tr>
+    <td>Q3: Are approved Conduits being installed as required? </td>
+    <td> @{items('Apply_to_each')['a3']}	</td> 
+    <td> @{items('Apply_to_each')['c3']} 	</td>
+  </tr>
+  
+  <tr>
+    <td>Q4: Are approved fitting, couplings, connectors, clamps being used as required? </td>
+    <td> @{items('Apply_to_each')['a4']}	</td> 
+    <td> @{items('Apply_to_each')['c4']}	</td>
+  </tr>
+  
+  <tr>
+    <td>Q5: Are approved Cables being installed as required? </td>
+    <td> @{items('Apply_to_each')['a5']}	</td> 
+    <td> @{items('Apply_to_each')['c5']}	</td>
+  </tr> 
+  
+  
+  <tr>
+    <td>Q6: Is all equipment properly installed as per spec? HOLD POINT </td>
+    <td> @{items('Apply_to_each')['a6']}	</td> 
+    <td> @{items('Apply_to_each')['c6']}	</td>
+  </tr> 
+  
+  
+  <tr>
+    <td>Q7: Has all systems been installed as indicated and in accordance with manufacturer’s instructions? </td>
+    <td> @{items('Apply_to_each')['a7']}	</td> 
+    <td> @{items('Apply_to_each')['c7']}	</td>
+  </tr>
+
+  <tr>
+    <td>Q8: Has a visual check for workmanship, installation, alignment, and height been conducted? HOLD POINT </td>
+    <td> @{items('Apply_to_each')['a8']}	</td> 
+    <td> @{items('Apply_to_each')['c8']}	</td>
+  </tr>  
+  
+  <tr>
+    <td>Q9: Has all work been coordinated for interference?</td>
+    <td> @{items('Apply_to_each')['a9']}	</td> 
+    <td> @{items('Apply_to_each')['c9']}	</td>
+  </tr>   
+  
+  <tr>
+    <td>Q10: Have all Hold Points been conducted?</td>
+    <td> @{items('Apply_to_each')['a10']} 	</td> 
+    <td>  @{items('Apply_to_each')['c10']}	</td>
+  </tr>  
+  
+  
+  <tr>
+    <td>Q11: Additional Inspection Points? </td>
+    <td>@{items('Apply_to_each')['a11']}	</td> 
+    <td> @{items('Apply_to_each')['c11']}	</td>
+  </tr> 
+  
+  
+  <tr>
+    <td>Q12: Buy American Compliance? </td>
+    <td> @{items('Apply_to_each')['a12']}	</td> 
+    <td> @{items('Apply_to_each')['c12']}	</td> 
+  </tr> 
+
+
+  <tr>
+    <td>  </td>
+    <td>	</td> 
+    <td>	</td>
+  </tr> 
+
+</table>
+<br> 
+
+<! ############ END: INSPECTION PLAN ############ >  
+
+
+<!############ START: Additional Comments section ############ > 
+
+
+<style>
+table, th, td {
+  border: 3px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 0;
+  text-align: left;
+}
+table#t03 {
+  width: 90%;    
+  background-color: #f1f1c1;
+} 
+
+</style>
+</head> 
+<h3 align="center"> Additional Comments </h3>
+
+<table style="width:90%" align="center">
+  <tr>
+    <td> @{items('Apply_to_each')['additional_comment']}</td> 
+    
+  </tr>  
+</table>
+<br>
+
+<!############ END: Additional Comments section ############ >   
+  
+
+<!############ START: Sign Section ############ > 
+
+<style>
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse; 
+}
+th, td {
+  padding: 0;
+  text-align: left;
+}
+table#t07 {
+  width: 90%;    
+  background-color: #f1f1c1;  
+} 
+tr.noBorder td {
+  border: 0;
+} 
+
+</style>
+</head>  
+
+<style> 
+
+</style> 
+
+<h3 align="center"> SIGN </h3>
+
+<table  style="width:90%" align="center">
+  <tr class="noBorder"> 
+    <td>QM/QS: @{items('Apply_to_each')['qm_sign']}</td>    
+    <td> </td> 
+    <td> </td>
+    <td>Date:  @{items('Apply_to_each')['qm_date']}</td> 
+    <td>Shift: @{items('Apply_to_each')['qm_shift']}</td>
+         
+  </tr>  
+  
+<table  style="width:90%" align="center">
+  <tr class="noBorder"> 
+    <td>CCM Sign off:  @{items('Apply_to_each')['ccm_sign']}</td>   
+    <td>Date:  @{items('Apply_to_each')['ccm_date']}</td> 
+    <td>Shift: @{items('Apply_to_each')['ccm_shift']}</td>
+         
+  </tr>   
+</table>
+<br> 
+
+<!############ END: Sign Section ############ >   
+
+
+
+
+
+</body>
+</html>
+      
